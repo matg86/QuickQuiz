@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- meta, CSS -->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
+    <title>Quick Quiz</title>
+</head>
+
+<body>
+
+    <!-- Homepage - Main heading and Catacgories -->
+    <div id="homepage">
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Q<span class="head-smallcap">uick</span> Q<span class="head-smallcap">uiz</span></h1>
+                <p>5 Questions. 20 Seconds.</p>
+                <a href="#" id="learn-button" class="btn btn-primary btn-md sign-up" href="#" role="button">Learn More</a>
+                <a href="#" id="signup-button" class="btn btn-deafult btn-md sign-up" href="#" role="button">Sign Up</a>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="container">
+                <div id="sports" class="catag-item col-xs-12 col-sm-4 col-lg-6">
+                    <p>Sports</p>
+                </div>
+                <div id="music" class="catag-item col-xs-12 col-sm-4 col-lg-6">
+                    <p>Music</p>
+                </div>
+                <div id="film" class="catag-item col-xs-12 col-sm-4 col-lg-6">
+                    <p>Film</p>
+                </div>
+                <div id="technology" class="catag-item col-xs-12 col-sm-4 col-lg-6">
+                    <p>Technology</p>
+                </div>
+                <div id="tv" class="catag-item col-xs-12 col-sm-4 col-lg-6">
+                    <p>Television</p>
+                </div>
+                <div id="general" class="catag-item col-xs-12 col-sm-4 col-lg-6">
+                    <p>General</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Quiz Pages - various headings for different catagories -->
+    <div id="quiz-page-head">
+        <header>
+            <a href="index.html" id="quizLink"><h1>Q<span class="head-smallcap">uick</span> Q<span class="head-smallcap">uiz</span></h1></a>
+            <span id="countdown" class="timer">:20</span>
+        </header>
+    </div>
+
+    <!-- Learn More / display:none until "learn more" button is clicked -->
+    <div id="learn-header" class="learn-header">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 id="learn-heading">A<span class="head-smallcap">bout</span></h1>
+                <p>5 Questions. 20 Seconds.</p>
+                <a href="index.html" class="btn btn-primary btn-md sign-up" role="button">Catagories</a>
+
+            </div>
+        </div>
+        <div id="about">
+            <p><span class="about" id="aboutP">P</span>ick a catagory</p>
+            <P><span class="about" id="aboutA">A</span>nswer 5 Questions in 20 seconds</P>
+            <p class="about">Good Luck!
+                <p>
+        </div>
+    </div>
+
+
+    <!-- SignUp / display:none until "Sign-up" button is clicked -->
+    <div id="signup-header" class="signup-header">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 id="signup-heading">S<span class="head-smallcap">ign</span>U<span class="head-smallcap">p</span></h1>
+                <p>5 Questions. 20 Seconds.</p>
+                <a href="index.html" class="btn btn-primary btn-md sign-up" role="button">Catagories</a>
+
+            </div>
+        </div>
+
+    <!-- Sign-up page dynamically added -->
+        <div id="signup-container">
+            <form>
+                Name:
+                <br>
+                <input type="text" name="name" placeholder="Quizmaster General">
+                <br>
+                <br> 
+                Email:
+                <br>
+                <input type="text" name="email" placeholder="quizmaster@general.com">
+            </form>
+            <a href="index.html" id="signup-confirm" class="btn btn-primary btn-md sign-up" role="button">Sign Up</a>
+            <p>*sign-up is currently disabled</p>
+        </div>
+    </div>
+
+
+    <!-- Initial Sports Quiz Header / display:none once "ready" is clicked -->
+    <div id="sports-header" class="quiz-header">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 id="sports-heading">S<span class="head-smallcap">ports</span></h1>
+                <p>5 Questions. 20 Seconds.</p>
+                <a href="index.html" class="btn btn-primary btn-md sign-up" role="button">Catagories</a>
+                <a id="sports-ready" class="btn btn-deafult btn-md sign-up ready" role="button">Ready?</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Initial Music Quiz Header / display:none once "ready" is clicked -->
+    <div id="music-header" class="quiz-header">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 id="music-heading">M<span class="head-smallcap">usic</span></h1>
+                <p>5 Questions. 20 Seconds.</p>
+                <a href="index.html" class="btn btn-primary btn-md sign-up" href="#" role="button">Catagories</a>
+                <a href="#" id="music-ready" class="btn btn-deafult btn-md sign-up ready" role="button">Ready?</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Initial Film Quiz Header / display:none once "ready" is clicked -->
+    <div id="film-header" class="quiz-header">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 id="film-heading">F<span class="head-smallcap">ilm</span></h1>
+                <p>5 Questions. 20 Seconds.</p>
+                <a href="index.html" class="btn btn-primary btn-md sign-up" href="#" role="button">Catagories</a>
+                <a href="#" id="film-ready" class="btn btn-deafult btn-md sign-up ready" href="#" role="button">Ready?</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Initial technology Quiz Header / display:none once "ready" is clicked -->
+    <div id="technology-header" class="quiz-header">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 id="technology-heading">T<span class="head-smallcap">echnology</span></h1>
+                <p>5 Questions. 20 Seconds.</p>
+                <a href="index.html" class="btn btn-primary btn-md sign-up" href="#" role="button">Catagories</a>
+                <a href="#" id="technology-ready" class="btn btn-deafult btn-md sign-up ready" role="button">Ready?</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Initial tv Quiz Header / display:none once "ready" is clicked -->
+    <div id="tv-header" class="quiz-header">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 id="tv-heading">T<span class="head-smallcap">.V.</span></h1>
+                <p>5 Questions. 20 Seconds.</p>
+                <a href="index.html" class="btn btn-primary btn-md sign-up" href="#" role="button">Catagories</a>
+                <a href="#" id="tv-ready" class="btn btn-deafult btn-md sign-up ready" role="button">Ready?</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Initial general Quiz Header / display:none once "ready" is clicked -->
+    <div id="general-header" class="quiz-header">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 id="general-heading">G<span class="head-smallcap">eneral</span></h1>
+                <p>5 Questions. 20 Seconds.</p>
+                <a href="index.html" class="btn btn-primary btn-md sign-up" href="#" role="button">Catagories</a>
+                <a href="#" id="general-ready" class="btn btn-deafult btn-md sign-up ready" role="button">Ready?</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  Quiz Dynamically added through js / display:none once "ready" is clicked -->
+    <div id="quiz-container">
+        <div id="content">
+            <h3 id="question"></h3>
+            <div id="choices"></div>
+            <button id="submit"></button>
+
+        </div>
+    </div>
+
+    <!-- Page Shows if user fails to answer questions in time -->
+    <p id="fail"> TIME'S UP!</p>
+    
+    <a href="index.html" id="catagHome" class="btn btn-primary btn-md sign-up" role="button">Catagories</a>
+
+
+
+    <!-- <footer>
+        <p>Mat Gladdish &copy</p>
+    </footer> -->
+
+
+    <!-- Main JS -->
+    <script type="text/javascript" src="scripts/script.js"></script>
+
+    <!-- Jquery needed for BS plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- BStrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

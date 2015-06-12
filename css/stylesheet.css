@@ -1,0 +1,567 @@
+/***************************************************************************
+SECTION INDEX: (CTRL+F ANY OF BELOW TO NAVIGATE TO SPECIFIC SECTION)
+              MAIN STYLING FOR EACH PAGE
+              HOME PAGE STYLING
+              LEARN MORE PAGE
+              SIGN UP PAGE
+              LIST NAVIGATION FOR CHOSING A CATAGORY
+              STYLING FOR EACH QUIZ PAGE
+              SPORTS QUESTIONS PAGE
+              MUSIC QUESTIONS PAGE
+              FILM QUESTIONS PAGE
+              TECHNOLOGY QUESTIONS PAGE
+              TELEVISION QUESTIONS PAGE
+              GENERAL QUESTIONS PAGE
+              LEARN PAGE
+              MEDIA QUERIES
+              DYNAMICALLY ADDED QUIZ PAGES
+
+RGB COLOR REF:
+              GOLD        rgb(232,183,26);   Header and Technology
+              BLUE        rgb(40,172,227);   Sports
+              RED         rgb(219,52,64);    Music
+              LightB/G    rgb(31,218,154);   Film
+              PINK/PURP   rgb(191,96,255);   Television
+              LIGHT GREY  rgb(105,105,105);  General
+****************************************************************************/
+
+
+
+/***************************************************************
+                 MAIN STYLING FOR EACH PAGE
+****************************************************************/
+
+body{
+  text-align: center;
+  background-color:black;
+  font-family: 'Poiret One', cursive;
+}
+
+.jumbotron{
+  padding-bottom: 8px;
+  text-align:center;
+  background-image: url("img/heading-img.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top:60px;
+  border-bottom: 1px solid grey;
+
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width:100%;
+  border-top: 1px solid grey;
+  background-color: black;
+  font-size: .5em;
+}
+
+
+/***************************************************************
+                    HOME PAGE STYLING
+****************************************************************/
+.jumbotron h1{
+  margin-top: -10px;
+  color: rgb(232,183,26);
+  font-size: 7.5em;
+}
+.head-smallcap{
+  font-size: .3em;
+  color:white;
+}
+
+.jumbotron p{
+  color:white;
+}
+
+.sign-up{
+  background-color:black; 
+  margin-top:10px;
+  border: rgb(40,172,227) solid 1px;
+  margin-bottom: 20px;
+}
+
+#signup-button{
+  color:rgb(232,183,26);
+}
+
+#signup-button:hover{
+  background-color: rgb(40,172,227);
+  color:white;
+}
+
+#homepage{
+  margin-top: -45px;
+}
+
+/***************************************************************
+                    Learn More Page
+****************************************************************/
+#learn-header{
+  margin-top: -30px;
+}
+
+#about{
+  color:white;
+  font-size: 1.4em;
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+
+.about{
+   font-size: 2em;
+  
+}
+
+#aboutP{
+  color:rgb(40,172,227);
+}
+
+#aboutA{
+  color:rgb(31,218,154);
+}
+
+/***************************************************************
+                    Sign Up Page
+****************************************************************/
+#signup-header{
+  margin-top: -30px;
+  margin-bottom: 80px;
+}
+
+input[type="text"]{
+  width: 220px;
+  border-radius: 10px;
+  text-align:center;
+  color:black;
+}
+input[type="text"]:focus{
+  border: 3px solid rgb(40,172,227) ;
+}
+
+form{
+  color:white;
+  font-size: 1.25em;
+}
+
+#signup-confirm{
+  margin-top: 25px;
+  border:1px solid rgb(232,183,26) ;
+}
+
+#signup-confirm:hover{
+  background-color: black;
+  color:white;
+  border-color: rgb(40,172,227);
+}
+/***************************************************************
+            LIST NAVIGATION FOR CHOSING A CATAGORY
+****************************************************************/
+
+.row{
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+
+.catag-item{
+  font-size: 1.4em;
+  color:white;
+  padding:10px 0 2px;
+  text-align:center;
+  margin-top:10px;
+  border-radius: 15px;
+  border-left: 4px solid black;
+  border-right: 4px solid black;
+  border-top: 4px solid black;
+  
+}
+
+.catag-item:hover{
+  -webkit-box-shadow:inset 0px 0px 0px 3px white;
+        -moz-box-shadow:inset 0px 0px 0px 3px white;
+        box-shadow:inset 0px 0px 0px 3px white;
+}
+
+.catag-item:active{
+  -webkit-box-shadow:inset 0px 0px 0px 3px white;
+        -moz-box-shadow:inset 0px 0px 0px 3px white;
+        box-shadow:inset 0px 0px 0px 3px white;
+}
+
+#sports{
+   background-color: rgb(40,172,227);
+}
+
+#music{
+   background-color: rgb(219,52,64);
+}
+#film{
+   background-color: rgb(31,218,154);
+}
+#technology{
+   background-color: rgb(232,183,26);
+}
+
+#tv{
+   background-color: rgb(191,96,255);
+}
+
+#general{
+   background-color: rgb(105,105,105);
+}
+
+/***************************************************************
+                  STYLING FOR EACH QUIZ PAGE
+****************************************************************/
+#quiz-page-head{
+margin-top: -5px;
+  display:none;
+}
+
+#quizLink{
+  display: block;
+}
+
+header h1{
+  color:rgb(232,183,26);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}  
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration:none;
+}
+
+#countdown{
+  display: none;
+  position: fixed;
+  left: 5px;
+  top: 5px;
+  font-size: 2em;
+  color:rgb(232,183,26);
+}
+
+.ready{
+  color:rgb(232,183,26);
+}
+
+label {
+  font-family: serif;
+  width: 100px;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4
+}
+
+input[type="radio"] {
+    width:20px;
+    height:20px;
+    display: none;
+}
+
+:checked + label{
+  border: 1px dashed rgb(232,183,26);
+}
+
+#fail{
+  margin-top: -10px;
+  font-size: 5em;
+  color:red;
+  display:none;
+}
+
+#catagHome{
+  display:none;
+  width: 90px;
+  margin:0 auto;
+}
+
+#finalScore{
+  padding-top: 60px;
+}
+
+#question{
+  font-size: 2em;
+  width: 90%;
+  margin: 30px auto 0;
+}
+
+#quiz-container{
+  display:none;
+  padding: 20px 0 20px;
+  color: white;
+}
+
+#content{
+  color:white;
+ 
+}
+
+#choices{
+  margin-top: 15px;
+  font-size: 1.5em;
+}
+
+#submit{
+  margin-top: 30px;
+  color: white;
+  border-radius: 10px;
+  background-color: black;
+  border: 1px solid rgb(232,183,26);
+}
+
+#submit:focus{
+  outline:0;
+}
+
+.quiz-header{
+  margin-top: -40px;
+}
+/***************************************************************
+                  SPORTS QUESTIONS PAGE
+****************************************************************/
+#sports-header{
+  display:none;
+}
+
+#sports-heading{
+  color:rgb(40,172,227);
+}
+
+
+
+/***************************************************************
+                  MUSIC QUESTIONS PAGE
+****************************************************************/
+#music-header{
+  display:none;
+}
+
+#music-heading{
+  color:rgb(219,52,64);
+}
+/***************************************************************
+                  FILM QUESTIONS PAGE
+****************************************************************/
+#film-header{
+  display:none;
+}
+
+#film-heading{
+  color:rgb(31,218,154);
+}
+/***************************************************************
+                  TECHNOLOGY QUESTIONS PAGE
+****************************************************************/
+#technology-header{
+  display:none;
+}
+
+#technology-heading{
+  color:rgb(232,183,26);
+}
+/***************************************************************
+                  TELEVISION QUESTIONS PAGE
+****************************************************************/
+#tv-header{
+  display:none;
+}
+
+#tv-heading{
+  color:rgb(191,96,255);
+}
+/***************************************************************
+                  GENERAL QUESTIONS PAGE
+****************************************************************/
+#general-header{
+  display:none;
+}
+
+#general-heading{
+  color:rgb(105,105,105);
+}
+
+/***************************************************************
+                       LEARN PAGE
+****************************************************************/
+#learn-header{
+  display:none;
+}
+
+#signup-header{
+  display:none;
+}
+
+
+
+
+/***************************************************************
+                      MEDIA QUERIES
+****************************************************************/
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+/***************************************************************
+                    HOME PAGE STYLING
+****************************************************************/
+.catag-item{
+height: 200px;
+font-size: 2.5em;
+line-height: 5;
+}
+
+#sports{
+      background-color: black;
+      color:rgb(40,172,227);
+      -webkit-box-shadow:inset 0px 0px 0px 6px rgb(40,172,227);
+      -moz-box-shadow:inset 0px 0px 0px 6px rgb(40,172,227);
+      box-shadow:inset 0px 0px 0px 6px rgb(40,172,227);
+}
+#music{
+      background-color: black;
+      color:rgb(219,52,64);
+      -webkit-box-shadow:inset 0px 0px 0px 6px rgb(219,52,64);
+      -moz-box-shadow:inset 0px 0px 0px 6px rgb(219,52,64);
+      box-shadow:inset 0px 0px 0px 6px rgb(219,52,64);
+}
+#film{
+      background-color: black;
+      color:rgb(31,218,154);
+      -webkit-box-shadow:inset 0px 0px 0px 6px rgb(31,218,154);
+      -moz-box-shadow:inset 0px 0px 0px 6px rgb(31,218,154);
+      box-shadow:inset 0px 0px 0px 6px rgb(31,218,154);
+}
+#technology{
+      background-color: black;
+      color:rgb(232,183,26);
+      -webkit-box-shadow:inset 0px 0px 0px 6px rgb(232,183,26);
+      -moz-box-shadow:inset 0px 0px 0px 6px rgb(232,183,26);
+      box-shadow:inset 0px 0px 0px 6px rgb(232,183,26);
+}
+#tv{
+      background-color: black;
+      color:rgb(191,96,255);
+      -webkit-box-shadow:inset 0px 0px 0px 6px rgb(191,96,255);
+      -moz-box-shadow:inset 0px 0px 0px 6px rgb(191,96,255);
+      box-shadow:inset 0px 0px 0px 6px rgb(191,96,255);
+}
+#general{
+      background-color: black;
+      color:rgb(105,105,105);
+      -webkit-box-shadow:inset 0px 0px 0px 6px rgb(105,105,105);
+      -moz-box-shadow:inset 0px 0px 0px 6px rgb(105,105,105);
+      box-shadow:inset 0px 0px 0px 6px rgb(105,105,105);
+}
+
+#sports:hover{
+        background-color: rgb(40,172,227);
+        -webkit-box-shadow:inset 0px 0px 0px 6px white;
+        -moz-box-shadow:inset 0px 0px 0px 6px white;
+        box-shadow:inset 0px 0px 0px 6px white;
+        color:white;
+}
+#music:hover{
+  background-color: rgb(219,52,64);
+        -webkit-box-shadow:inset 0px 0px 0px 6px white;
+        -moz-box-shadow:inset 0px 0px 0px 6px white;
+        box-shadow:inset 0px 0px 0px 6px white;
+        color:white;
+}
+#film:hover{
+  background-color: rgb(31,218,154);
+        -webkit-box-shadow:inset 0px 0px 0px 6px white;
+        -moz-box-shadow:inset 0px 0px 0px 6px white;
+        box-shadow:inset 0px 0px 0px 6px white;
+        color:white;
+}
+#technology:hover{
+  background-color: rgb(232,183,26);
+        -webkit-box-shadow:inset 0px 0px 0px 6px white;
+        -moz-box-shadow:inset 0px 0px 0px 6px white;
+        box-shadow:inset 0px 0px 0px 6px white;
+        color:white;
+}
+#tv:hover{
+  background-color: rgb(191,96,255);
+        -webkit-box-shadow:inset 0px 0px 0px 6px white;
+        -moz-box-shadow:inset 0px 0px 0px 6px white;
+        box-shadow:inset 0px 0px 0px 6px white;
+        color:white;
+}
+#general:hover{
+  background-color: rgb(105,105,105);
+        -webkit-box-shadow:inset 0px 0px 0px 6px white;
+        -moz-box-shadow:inset 0px 0px 0px 6px white;
+        box-shadow:inset 0px 0px 0px 6px white;
+        color:white;
+}
+
+/*************************************************
+      DYNAMICALLY ADDED QUIZ PAGES
+***************************************************/
+#countdown{
+  top: 2px;
+  font-size: 2em;
+  color:rgb(232,183,26);
+  display: none;
+}
+
+#quiz-container{
+  padding: 10px 0 20px;
+  color: white;
+}
+
+#question{
+  font-size: 4em;
+}
+
+#content{
+  margin-top: 210px;
+  
+}
+#choices{
+  margin-top: 30px;
+  font-size: 2em;
+}
+
+#submit{
+  font-size: 2em;
+}
+#score{
+  font-size: 4em;
+}
+#fail{
+  margin-top: 100px;
+  font-size: 10em;
+  color:red;
+  display:none;
+}
+
+#catagHome{
+  display:none;
+  font-size: 2em;
+  width: 160px;
+  margin:0 auto;
+}
+#homepage{
+  margin-top: -30px;
+}
+
+    }
+
+
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+       
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+       
+    } */
+
