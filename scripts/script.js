@@ -42,14 +42,14 @@ var signupPage = byId("signup-button");
 var quizH = function() {
         homePage.style.display = "none";
         quizPageHead.style.display = "inline-block";
-    }
+    };
     //FUNCTION FOR NAVIGATING TO DIFFERENT CATAGORIES PAGES (&Learn More / SignUp)
 var quickQuiz = function(quizTitle, quizHeader) {
     quizTitle.onclick = function() {
         quizH();
         quizHeader.style.display = "block";
-    }
-}
+    };
+};
 
 quickQuiz(sportQuiz, sportsHeader);
 quickQuiz(musicQuiz, musicHeader);
@@ -216,7 +216,7 @@ var generalQuestions = [{
 var content = byId("content"),
     questionContainer = byId("question"),
     choicesContainer = byId("choices"),
-    scoreContainer = byId("score"),
+    
     submitBtn = byId("submit");
 var currentQuestion = 0,
     score = 0,
@@ -307,12 +307,12 @@ var quizzes = function(quiz) {
 
     window.addEventListener("load", askQuestion, true);
     submitBtn.addEventListener("click", checkAnswer, false);
-}
+};
 
 
 ///  Variables used for countodwn timer, once ready button is clicked  //////
 var interval;
-var twentySeconds = 60 * .32;
+var twentySeconds = 60 * 0.32;
 var failScreen = byId("fail");
 var catagHome = byId("catagHome");
 
@@ -321,7 +321,7 @@ function startTimer(duration, display) {
     var timer = duration,
         minutes, seconds;
     interval = setInterval(function() {
-        minutes = parseInt(timer / 60, 10)
+        minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
 
         minutes = minutes < 10 ? "0" + minutes : minutes;
@@ -341,7 +341,7 @@ function startTimer(duration, display) {
             content.style.display = "none";
             failScreen.style.display = "block";
             catagHome.style.display = "block";
-            clearInterval(interval)
+            clearInterval(interval);
         }
 
 
@@ -357,7 +357,7 @@ function startTimer(duration, display) {
 var displayTimer = function() {
     display.style.display = "inline-block";
     startTimer(twentySeconds, display);
-}
+};
 
 //   Var = button used to start the the countdown Timer on each catagory page  //
 var display = byId('countdown');
@@ -398,8 +398,8 @@ var quizStart = function(catReady) {
             quizzes(generalQuestions);
             generalHeader.style.display = "none";
         }
-    }
-}
+    };
+};
 
 
 quizStart(sportsReady);
